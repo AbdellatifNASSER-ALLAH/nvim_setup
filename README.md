@@ -82,7 +82,5 @@ cp -r ~/.config/nvim_backups/nvim_backup_<timestamp> ~/.config/nvim
 ```
 
 ---
-
                                     Thank you !
-
 ---
