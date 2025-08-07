@@ -83,8 +83,6 @@ cp -r ~/.config/nvim_backups/nvim_backup_<timestamp> ~/.config/nvim
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+Thank you !.
 
 ---
