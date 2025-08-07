@@ -80,9 +80,5 @@ If you want to restore a previous config backup:
 # Replace <timestamp> with the backup you want to restore
 cp -r ~/.config/nvim_backups/nvim_backup_<timestamp> ~/.config/nvim
 ```
-
 ---
-<p align="center">
-  <h1>Thank you!</h1>
-</p>
----
+<p align="center"><strong>Thank you !</strong></p>
