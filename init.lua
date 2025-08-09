@@ -79,6 +79,12 @@ vim.cmd('packadd! nohlsearch')
 -- Store undo history
 vim.opt.undofile = true
 vim.opt.undodir = vim.fn.expand("~/.config/nvim/undo")
+-- How the cursor looks 
+vim.opt.guicursor = ""
+
+-- 1st: for replacing the word your cursor is right now the 2nd to make current file executable
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.o.guifont = "Source Code Pro:h14" -- h14 = font size
 -- lazy nvim config 
