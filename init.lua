@@ -76,6 +76,9 @@ end, { desc = 'Print the git blame for the current line' })
 -- For example, to add the "nohlsearch" package to automatically turn off search highlighting after
 -- 'updatetime' and when going to insert mode
 vim.cmd('packadd! nohlsearch')
+-- Store undo history
+vim.opt.undofile = true
+vim.opt.undodir = vim.fn.expand("~/.config/nvim/undo")
 
 vim.o.guifont = "Source Code Pro:h14" -- h14 = font size
 -- lazy nvim config 
