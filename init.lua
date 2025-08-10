@@ -81,6 +81,8 @@ vim.opt.undofile = true
 vim.opt.undodir = vim.fn.expand("~/.config/nvim/undo")
 -- How the cursor looks 
 vim.opt.guicursor = ""
+vim.opt.termguicolors = true -- enable true color support
+
 
 -- 1st: for replacing the word your cursor is right now the 2nd to make current file executable
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
