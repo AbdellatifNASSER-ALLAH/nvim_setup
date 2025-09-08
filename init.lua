@@ -88,6 +88,6 @@ vim.opt.termguicolors = true -- enable true color support
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.o.guifont = "Source Code Pro:h14" -- h14 = font size
+vim.o.guifont = "JetBrainsMono Nerd Font:h14"
 -- lazy nvim config 
 require("config.lazy")
