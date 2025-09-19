@@ -1,3 +1,4 @@
+-- lua/plugins/lsp.lua
 return {
   -- Mason and LSP setup
   { "williamboman/mason.nvim", build = ":MasonUpdate" },
@@ -15,14 +16,19 @@ return {
         ensure_installed = { "clangd" },
       })
 
-      -- Set up LSP
-      local lspconfig = require("lspconfig")
+      -- Completion capabilities
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-      lspconfig.clangd.setup({
-        capabilities = capabilities,
+      -- Define clangd config using new API
+      vim.lsp.config.clangd = {
         cmd = { "clangd", "--inlay-hints=false" },
-      })
+        capabilities = capabilities,
+        -- you can add on_attach, root_dir, etc. here if needed
+      }
+
+      -- Enable clangd
+      vim.lsp.enable({ "clangd" })
     end,
   },
 }
+

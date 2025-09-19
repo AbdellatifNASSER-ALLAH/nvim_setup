@@ -11,8 +11,5 @@ return {
         border = "curved",      -- curved | single | double | shadow
       },
     }
-
-    -- Optional: keybinding for <leader>t
-    vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "Toggle floating terminal" })
   end
 }
