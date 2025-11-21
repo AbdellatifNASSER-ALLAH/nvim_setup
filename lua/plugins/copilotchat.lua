@@ -14,8 +14,8 @@ return {
         auto_insert_mode = true,
         window = {
           layout = "float",
-          width = 80,
-          height = 20,
+          width = 120,
+          height = 40,
           border = "rounded",
         },
       })
