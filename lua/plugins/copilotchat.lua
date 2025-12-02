@@ -5,7 +5,7 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "github/copilot.vim",
+      { "github/copilot.vim", enabled = false },
     },
     build = "make tiktoken",
     config = function()
