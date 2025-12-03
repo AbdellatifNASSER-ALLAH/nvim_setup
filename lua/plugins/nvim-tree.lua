@@ -13,6 +13,7 @@ return {
 			},
 			sync_root_with_cwd = true,
 			respect_buf_cwd = true,
+			git = { ignore = false},
 		}
 
 		vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle File Tree" })
