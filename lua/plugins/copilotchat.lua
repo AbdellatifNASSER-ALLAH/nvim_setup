@@ -5,7 +5,7 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      { "github/copilot.vim", enabled = false },
+      { "github/copilot.vim", enabled = true },
     },
     build = "make tiktoken",
     config = function()
@@ -21,9 +21,9 @@ return {
       })
 
       -- Keybinding to open Copilot Chat
-      vim.keymap.set("n", "<leader>cc", function()
-        require("CopilotChat").open()
-      end, { desc = "Open Copilot Chat" })
+     -- vim.keymap.set("n", "<leader>cc", function()
+     --   require("CopilotChat").open()
+     -- end, { desc = "Open Copilot Chat" })
     end,
   },
 }
