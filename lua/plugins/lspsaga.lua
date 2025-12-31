@@ -8,7 +8,6 @@ return {
 		require('lspsaga').setup({
 			ui = {
 				border = 'rounded',
-				code_action = "💡",
 			},
 			hover = {
 				-- This helps with the "Markdown" look by keeping things structured

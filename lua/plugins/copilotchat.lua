@@ -21,14 +21,12 @@ return {
 			})
 
 			-- Keybinding to open Copilot Chat
-			-- Disable Copilot default TAB mapping
-			vim.g.copilot_no_tab_map = true
-			-- Accept Copilot inline suggestion with Shift+Tab
-			vim.keymap.set("i", "<S-Tab>", 'copilot#Accept("<CR>")', {
+			-- Accept Copilot inline suggestio
+			vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
 				expr = true,
-				replace_keycodes = false,
-				silent = true,
+				replace_keycodes = false
 			})
+			vim.g.copilot_no_tab_map = true
 			-- vim.keymap.set("n", "<leader>cc", function()
 				--   require("CopilotChat").open()
 				-- end, { desc = "Open Copilot Chat" })
