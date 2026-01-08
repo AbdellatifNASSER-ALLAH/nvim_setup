@@ -14,6 +14,9 @@ return {
 				max_width = 0.6,
 				open_link = 'gx',
 			},
+			lightbulb = {
+				enable = false,
+			},
 		})
 		-- Force the hover window to HIDE the markdown symbols
 		vim.api.nvim_create_autocmd("FileType", {
