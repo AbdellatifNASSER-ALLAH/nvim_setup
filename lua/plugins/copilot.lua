@@ -3,6 +3,7 @@ return {
 	init = function()
 		-- Disable default Tab mapping so we can use C-J
 		vim.g.copilot_no_tab_map = true
+		vim.g.copilot_enabled = 0
 	end,
 	config = function()
 		-- Keybinding to accept Copilot inline suggestion
